@@ -1,0 +1,22 @@
+[project]
+name = "google-cloudbuild-visualizer"
+authors = [
+    {name = "Ali Masri", email = "alimasri1991@gmail.com"}
+]
+version = "0.1.0"
+description = "Visualize Google Cloud Build configuration files"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "graphviz>=0.20.3",
+    "loguru>=0.7.2",
+    "pyyaml>=6.0.2",
+    "types-pyyaml>=6.0.12.20240917",
+]
+
+[project.scripts]
+cloudbuild-visualizer = "google_cloudbuild_visualizer:main.main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
